@@ -59,6 +59,7 @@ Edit
 │── server.js           # Backend (Node.js, Express, MongoDB)
 │── .env                # MongoDB Configuration
 │── package.json        # Dependencies
+
 📌 API Endpoints
 Method	Endpoint	Description
 POST	/register	Registers a new user
