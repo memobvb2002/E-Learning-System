@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - E-Learning</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        if (!localStorage.getItem("user")) {
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Welcome to E-Learning Platform</h1>
+    <h2>Available Courses:</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>Machine Learning</li>
+        <li>Data Science</li>
+        <li>Cybersecurity</li>
+    </ul>
+
+    <script>
+        document.getElementById("logout").addEventListener("click", () => {
+            localStorage.removeItem("user");
+            window.location.href = "login.html";
+        });
+    </script>
+</body>
+</html>
